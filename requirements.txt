@@ -1,4 +1,0 @@
-streamlit
-python-dotenv
-xai-sdk
-requests

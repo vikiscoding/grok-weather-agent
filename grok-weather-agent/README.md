@@ -1,53 +1,48 @@
-# 🚀 Grok Agent with Tools
+# 🚀 A Multi-Tool Agent using Grok
 
-A live interactive agent powered by **xAI Grok** + **Streamlit** with real tool calling.
+A live, interactive agent powered by **xAI Grok-4** with real tool calling.
 
-![Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen)
+**Live Demo**: [https://svikgrokweatheragent.streamlit.app](https://svikgrokweatheragent.streamlit.app)
 
 ## ✨ Features
 
-- Real-time chat with Grok-4
-- **Weather Tool** (fetches live temperature using Open-Meteo API)
-- Tool calling capability (can be extended easily)
-- Clean, responsive web interface
-- Secure API key handling
+- **5 Real Tools**:
+  - Weather (any city)
+  - Calculator (math expressions)
+  - Current Time (city-aware: New Delhi, Toronto, London, etc.)
+  - Web Search (DuckDuckGo)
+  - Wikipedia Summary
+- Session limit (10 messages) to control API costs
+- Clean conversation memory
+- Built with xAI SDK + Streamlit
+
+## 🎮 Try These Prompts
+
+- "What's the weather in New Delhi?"
+- "What is 234 * 17 + 89?"
+- "What time is it right now in New Delhi?"
+- "Latest news about xAI"
+- "Wikipedia summary of Agentic AI"
 
 ## 🛠️ Tech Stack
 
-- **xAI SDK** (`grok-4`)
-- **Streamlit** (frontend)
+- **xAI Grok-4** + Tool Calling
+- **Streamlit** (frontend + deployment)
 - Python 3.14 + Virtual Environment
-- Tool calling with function execution
-
-## 🎮 Try It Live
-
-👉 **[Open the Live Agent](https://svikgrokweatheragent.streamlit.app)**
-
-Try asking:
-- "What's the weather in Toronto?"
-- "Weather in West Rouge"
-- "Compare Toronto and Vancouver weather"
-
-## 📸 Screenshots
-
-*(Add screenshots here later)*
+- Secure API key handling
 
 ## 🚀 How to Run Locally
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/vikiscoding/grok-agent-weather.git
-cd grok-agent-weather
+git clone https://github.com/vikiscoding/grok-weather-agent.git
+cd grok-weather-agent
 
-# 2. Create virtual environment
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
-# 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Add your key
-echo "XAI_API_KEY=xai-your-key-here" > .env
+# Add your key
+echo "XAI_API_KEY=your_key_here" > .env
 
-# 5. Run
 streamlit run app.py

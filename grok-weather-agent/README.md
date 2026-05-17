@@ -2,38 +2,45 @@
 
 A live, interactive agent powered by **xAI Grok-4** with real tool calling.
 
-**Live Demo**: [https://svikgrokweatheragent.streamlit.app](https://svikgrokweatheragent.streamlit.app)
+**Live Demo**: https://svikweatheragent.streamlit.app/ 
 
-## ✨ Features
+---
 
-- **5 Real Tools**:
-  - Weather (any city)
-  - Calculator (math expressions)
-  - Current Time (city-aware: New Delhi, Toronto, London, etc.)
-  - Web Search (DuckDuckGo)
-  - Wikipedia Summary
-- Session limit (10 messages) to control API costs
-- Clean conversation memory
-- Built with xAI SDK + Streamlit
+### ✨ Features
+- **Weather** → Current temperature for any city
+- **Calculator** → Safe math expressions
+- **City-aware Time** → Local time in major cities
+- **Web Search** → Real-time DuckDuckGo results
+- **Wikipedia Summary** → Quick topic summaries
 
-## 🎮 Try These Prompts
+### Screenshots
 
-- "What's the weather in New Delhi?"
-- "What is 234 * 17 + 89?"
-- "What time is it right now in New Delhi?"
-- "Latest news about xAI"
-- "Wikipedia summary of Agentic AI"
+![Demo 1]!  
+*[(Weather + Calculator in action* !!!)](streamlit_demo1.png)
 
-## 🛠️ Tech Stack
+![Demo 2]  
 
-- **xAI Grok-4** + Tool Calling
-- **Streamlit** (frontend + deployment)
-- Python 3.14 + Virtual Environment
-- Secure API key handling
+![*Time + Search example* !](streamlit_demo2.png)
+*(Add 2–3 screenshots here — see instructions below)*
 
-## 🚀 How to Run Locally
+### Tech Stack
+- **Frontend**: Streamlit
+- **LLM**: Grok-4 (xAI)
+- **Tools**: Custom Python functions + xAI SDK
+- **Deployment**: Streamlit Cloud
+
+### How to Run Locally
 
 ```bash
+git clone https://github.com/vikiscoding/grok-weather-agent.git
+cd grok-weather-agent
+pip install -r requirements.txt
+cp .env.example .env          # Add your XAI_API_KEY
+streamlit run app.py
+Usage Limit
+10 messages per session (protects API budget). Refresh page to reset.
+
+
 git clone https://github.com/vikiscoding/grok-weather-agent.git
 cd grok-weather-agent
 
@@ -46,3 +53,7 @@ pip install -r requirements.txt
 echo "XAI_API_KEY=your_key_here" > .env
 
 streamlit run app.py
+
+Want to Contribute?
+Feel free to open issues or PRs!
+Made with ❤️ by Vikrant

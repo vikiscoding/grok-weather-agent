@@ -2,7 +2,7 @@
 
 A live, interactive agent powered by **xAI Grok-4** with real tool calling.
 
-**Live Demo**: [https://svikgrokweatheragent.streamlit.app](https://svikgrokweatheragent.streamlit.app)
+**Live Demo**: [[https://svikgrokweatheragent.streamlit.app](https://svikgrokweatheragent.streamlit.app)](https://svikweatheragent.streamlit.app/)
 
 ## ✨ Features
 
